@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A6631285 期末</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    $(document).ready(function () {
+
+      $("#_alert").hide();
+      $("#_btn").click(function () {
+        $("#_alert").show();
+      });
+    });
+
+    function close_alert() {
+      $("#_alert").hide();
+    }
+
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item a {
+      font-size: 24px;
+    }
+
+    .navbar-brand {
+      font-size: 32px;
+    }
+
+    footer p {
+      font-size: 21px;
+    }
+
+    form label {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Back to top btn-->
+  <a href="#">
+    <div class="d-none d-sm-none d-md-block"
+      style="z-index: 999; position: fixed; right: 16px; bottom: 16px; border-radius: 32px; background-color: rgb(240, 240, 240); width: 64px; height: 64px; text-align: center; font-size: 36px; border: 1px black solid;">
+      <i class="bi bi-caret-up-fill"></i>
+    </div>
+  </a>
+
+  <!-- Navbar Start-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">跑車經銷商</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="首頁">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#_about" data-toggle="tooltip" data-placement="bottom" title="關於">關於</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html" data-toggle="tooltip" data-placement="bottom" title="產品介紹">產品介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#_contact" data-toggle="tooltip" data-placement="bottom" title="聯繫我們">聯絡我們</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            其他功能
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="gallery.html" data-toggle="tooltip" data-placement="auto" title="圖片庫">圖片庫</a>
+            <a class="dropdown-item disabled" href="#" data-toggle="tooltip" data-placement="auto" title="網誌">網誌</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item disabled" href="#" data-toggle="tooltip" data-placement="auto" title="問題">FAQ</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar End-->
+
+  <!-- Body Start-->
+  <div>
+
+    <!-- Carousel Start -->
+    <div class="container-fluid" style="background-color: rgb(240, 240, 240)">
+      <div class="col-12 col-md-10 mx-auto">
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+
+            <!-- Car1 -->
+            <div class="carousel-item active">
+              <img src="res/car1.jpg" class="d-block border w-100">
+              <div class="carousel-caption d-sm-none d-none d-md-block">
+                <h1 class="font-weight-bolder">Bugatti Chiron</h1>
+                <h4>UNCOVERING A NEW DIMENSION</h4>
+              </div>
+              <!-- Display on Small -->
+              <div class="carousel-caption d-md-none d-sm-block" style="top: 4px;">
+                <h4>Bugatti Chiron</h4>
+              </div>
+            </div>
+
+            <!-- Car2 -->
+            <div class="carousel-item">
+              <img src="res/car2.jpg" class="d-block border w-100">
+              <div class="carousel-caption d-sm-none d-none d-md-block">
+                <h1 class="font-weight-bolder">LaFerrari (2013)</h1>
+                <h4>FERRARI'S MOST AMBITIOUS PROJECT</h4>
+              </div>
+              <!-- Display on Small -->
+              <div class="carousel-caption d-md-none d-sm-block" style="top: 4px;">
+                <h4>LaFerrari (2013)</h4>
+              </div>
+            </div>
+
+            <!-- Car3 -->
+            <div class="carousel-item">
+              <img src="res/car3.jpg" class="d-block border w-100">
+              <div class="carousel-caption d-sm-none d-none d-md-block">
+                <h1 class="font-weight-bolder">Koenigsegg Jesko</h1>
+                <h4>The all-new megacar from Koenigsegg</h4>
+              </div>
+              <!-- Display on Small -->
+              <div class="carousel-caption d-md-none d-sm-block" style="top: 4px;">
+                <h4>Koenigsegg Jesko</h4>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About -->
+    <div class="container-fluid p-4" style="background-color: white;" id="_about">
+      <div class="text-center">
+        <h1 class="font-weight-bolder display-3 d-sm-none d-none d-md-block">創立於2021</h1>
+        <h1 class="font-weight-bolder display-5 d-md-none d-sm-block">創立於2021</h1>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-4 mr-n4">
+          <img src="res/icon.png" class="img-fluid mx-auto d-block w-75">
+        </div>
+        <div class="col-8 text-left" style="position: relative;">
+          <h4 class="d-md-none d-sm-block mb-5">創辦人 A6631285 認為有夢最美，因此創立此車輛經銷商。所有販售車輛皆非泡水、事故車。</h4>
+          <h2 class="d-sm-none d-none d-md-block mb-5">創辦人 A6631285 認為有夢最美，因此創立此車輛經銷商。所有販售車輛皆非泡水、事故車。</h2>
+
+          <div style="position: absolute; right: 0; bottom: 0;">
+            <a class="btn btn-outline-primary btn-lg" href="portfolio.html">點我買車</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid pb-4" style="background-color: rgb(240, 240, 240)" id="_contact">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-bolder display-3 d-sm-none d-none d-md-block">聯絡我們</h1>
+        <h1 class="font-weight-bolder display-5 d-md-none d-sm-block">聯絡我們</h1>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputPhone">電話號碼</label>
+          <input type="password" class="form-control" id="exampleInputPhone">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">電子郵件信箱</label>
+          <input type="email" class="form-control" id="exampleInputEmail1">
+        </div>
+        <div class="form-group">
+          <label for="exampleInput">說明你的問題</label>
+          <input type="text" class="form-control" id="exampleInput">
+        </div>
+        <div class="alert alert-success" role="alert" id="_alert">
+          提問已送出，我們將會派專人盡快處理你的問題。
+          <button type="button" class="close" onclick="close_alert()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <a class="btn btn-outline-primary btn-lg" id="_btn">送出</a>
+      </form>
+    </div>
+
+  </div>
+  <!-- Body End-->
+
+  <!-- Footer Start -->
+  <footer class="border-top pt-2" style="background-color: rgb(200, 200, 200);">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 text-md-left">
+          <h1>預約試乘</h1>
+          <p><i class="bi bi-geo-alt-fill mr-1"></i>106台北市大安區建國南路二段231號</p>
+          <p><i class="bi bi-telephone-fill mr-1"></i></i>02 12345678</p>
+
+        </div>
+
+        <div class="col-md-4 text-md-center">
+          <div style="font-size: 48px;">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center" style="background-color: rgb(180, 180, 180);">
+      <p>Copyright 2021</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+
+</html>

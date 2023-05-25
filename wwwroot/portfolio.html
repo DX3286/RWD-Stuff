@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A6631285 期末</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        $(document).ready(function () {
+            $("#reg").click(function () {
+                $("#liveToast").toast('show');
+            });
+
+            $("#_loggin").click(function () {
+                $("#liveToast").toast('show');
+            });
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            font-size: 24px;
+        }
+
+        .navbar-brand {
+            font-size: 32px;
+        }
+
+        footer p {
+            font-size: 21px;
+        }
+
+        form label {
+            font-size: 24px;
+        }
+
+        #reg:hover {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back to top btn-->
+    <a href="#">
+        <div class="d-none d-sm-none d-md-block"
+            style="z-index: 999; position: fixed; right: 16px; bottom: 16px; border-radius: 32px; background-color: rgb(240, 240, 240); width: 64px; height: 64px; text-align: center; font-size: 36px; border: 1px black solid;">
+            <i class="bi bi-caret-up-fill"></i>
+        </div>
+    </a>
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">跑車經銷商</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom"
+                        title="首頁">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#_about" data-toggle="tooltip" data-placement="bottom"
+                        title="關於">關於</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="產品介紹">產品介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#_contact" data-toggle="tooltip" data-placement="bottom"
+                        title="聯繫我們">聯絡我們</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        其他功能
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="gallery.html" data-toggle="tooltip" data-placement="auto"
+                            title="圖片庫">圖片庫</a>
+                        <a class="dropdown-item disabled" href="index.html" data-toggle="tooltip" data-placement="auto"
+                            title="網誌">網誌</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled" href="index.html" data-toggle="tooltip" data-placement="auto"
+                            title="問題">FAQ</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+
+    <!-- Body Start-->
+    <div>
+
+        <!-- Card Start-->
+        <div class="container-fluid" style="background-color: rgb(240, 240, 240)">
+            <div class="row">
+                <!-- Car1 Start-->
+                <div class="col-12">
+                    <div class="card my-3">
+                        <div class="row no-gutters">
+                            <div class="col-xl-4">
+                                <!-- Carousel -->
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="res/car1.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car1A.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car1B.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <img src="res/car1.jpg" class="img-fluid mx-auto d-block border mt-xl-0 mt-2"> -->
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="card-body">
+                                    <h4 class="card-title py-3 text-xl-left text-center">Bugatti Chiron</h4>
+                                    <!-- Collapse -->
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample">
+                                                <!-- 1 -->
+                                                <div class="card" style="border-top-right-radius: 0;">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseOne" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                座位
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            雙門二人座
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 2 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                變速器
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            雙離合器7速自手排
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 3 -->
+                                                <div class="card" style="border-bottom-right-radius: 0;">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseThree">
+                                                                引擎
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            8.0 L（488 cu in） W16缸 四渦輪增壓引擎
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample2">
+                                                <!-- 4 -->
+                                                <div class="card" style="border-top-left-radius: 0;">
+                                                    <div class="card-header" id="headingFour">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFour" aria-expanded="true"
+                                                                aria-controls="collapseFour">
+                                                                排氣量
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseFour" class="collapse"
+                                                        aria-labelledby="headingFour" data-parent="#accordionExample2">
+                                                        <div class="card-body">
+                                                            7993cc
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 5 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFive">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFive" aria-expanded="false"
+                                                                aria-controls="collapseFive">
+                                                                性能
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFive" class="collapse"
+                                                        aria-labelledby="headingFive" data-parent="#accordionExample2">
+                                                        <div class="card-body">
+                                                            1103kW , 1600Nm @2000rpm
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 6 -->
+                                                <div class="card" style="border-bottom-left-radius: 0;">
+                                                    <div class="card-header" id="headingSix">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseSix" aria-expanded="false"
+                                                                aria-controls="collapseSix">
+                                                                產地與售價
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseSix" class="collapse show"
+                                                        aria-labelledby="headingSix" data-parent="#accordionExample2">
+                                                        <div class="card-body">
+                                                            法國 , 售價約 100,000,000NT
+                                                            <a class="btn btn-outline-primary btn-sm" style="position: absolute; right: 2%;"
+                                                                data-toggle="modal" data-target="#logginModal">預約賞車</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Collapse -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car1 End-->
+
+                <!-- Car2 Start-->
+                <div class="col-12">
+                    <div class="card my-3">
+                        <div class="row no-gutters">
+                            <div class="col-xl-4">
+                                <!-- Carousel -->
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="res/car2.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car2A.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car2B.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <img src="res/car2.jpg" class="img-fluid mx-auto d-block border mt-xl-0 mt-2"> -->
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="card-body">
+                                    <h4 class="card-title py-3 text-xl-left text-center">LaFerrari (2013)</h4>
+                                    <!-- Collapse -->
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample_C2A">
+                                                <!-- 1 -->
+                                                <div class="card" style="border-top-right-radius: 0;">
+                                                    <div class="card-header" id="headingOne_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseOne_C2" aria-expanded="true"
+                                                                aria-controls="collapseOne_C2">
+                                                                座位
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne_C2" class="collapse"
+                                                        aria-labelledby="headingOne_C2"
+                                                        data-parent="#accordionExample_C2A">
+                                                        <div class="card-body">
+                                                            雙門二人座
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 2 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo_C2" aria-expanded="false"
+                                                                aria-controls="collapseTwo_C2">
+                                                                變速器
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo_C2" class="collapse"
+                                                        aria-labelledby="headingTwo_C2"
+                                                        data-parent="#accordionExample_C2A">
+                                                        <div class="card-body">
+                                                            F1七速雙離合器自手排
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 3 -->
+                                                <div class="card" style="border-bottom-right-radius: 0;">
+                                                    <div class="card-header" id="headingThree_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThree_C2" aria-expanded="false"
+                                                                aria-controls="collapseThree_C2">
+                                                                引擎
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree_C2" class="collapse"
+                                                        aria-labelledby="headingThree_C2"
+                                                        data-parent="#accordionExample_C2A">
+                                                        <div class="card-body">
+                                                            6.3公升V12缸自然進氣引擎 + 後軸一具電動馬達
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample_C2B">
+                                                <!-- 4 -->
+                                                <div class="card" style="border-top-left-radius: 0;">
+                                                    <div class="card-header" id="headingFour_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFour_C2" aria-expanded="true"
+                                                                aria-controls="collapseFour_C2">
+                                                                排氣量
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseFour_C2" class="collapse"
+                                                        aria-labelledby="headingFour_C2"
+                                                        data-parent="#accordionExample_C2B">
+                                                        <div class="card-body">
+                                                            6262cc
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 5 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFive_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFive_C2" aria-expanded="false"
+                                                                aria-controls="collapseFive_C2">
+                                                                性能
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFive_C2" class="collapse"
+                                                        aria-labelledby="headingFive_C2"
+                                                        data-parent="#accordionExample_C2B">
+                                                        <div class="card-body">
+                                                            597kW @9000rpm , 700Nm @6750rpm
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 6 -->
+                                                <div class="card" style="border-bottom-left-radius: 0;">
+                                                    <div class="card-header" id="headingSix_C2">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseSix_C2" aria-expanded="false"
+                                                                aria-controls="collapseSix_C2">
+                                                                產地與售價
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseSix_C2" class="collapse show"
+                                                        aria-labelledby="headingSix_C2"
+                                                        data-parent="#accordionExample_C2B">
+                                                        <div class="card-body">
+                                                            義大利 , 售價約 40,000,000NT
+                                                            <a class="btn btn-outline-primary btn-sm" style="position: absolute; right: 2%;"
+                                                                data-toggle="modal" data-target="#logginModal">預約賞車</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Collapse -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car2 End-->
+
+                <!-- Car3 Start-->
+                <div class="col-12">
+                    <div class="card my-3">
+                        <div class="row no-gutters">
+                            <div class="col-xl-4">
+                                <!-- Carousel -->
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="res/car3.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car3A.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="res/car3B.jpg"
+                                                class="img-fluid mx-auto d-block border mt-xl-0 mt-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <img src="res/car3.jpg" class="img-fluid mx-auto d-block border mt-xl-0 mt-2"> -->
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="card-body">
+                                    <h4 class="card-title py-3 text-xl-left text-center">Koenigsegg Jesko</h4>
+                                    <!-- Collapse -->
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample_C3A">
+                                                <!-- 1 -->
+                                                <div class="card" style="border-top-right-radius: 0;">
+                                                    <div class="card-header" id="headingOne_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseOne_C3" aria-expanded="true"
+                                                                aria-controls="collapseOne_C3">
+                                                                座位
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne_C3" class="collapse"
+                                                        aria-labelledby="headingOne_C3"
+                                                        data-parent="#accordionExample_C3A">
+                                                        <div class="card-body">
+                                                            雙門二人座
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 2 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo_C3" aria-expanded="false"
+                                                                aria-controls="collapseTwo_C3">
+                                                                變速器
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo_C3" class="collapse"
+                                                        aria-labelledby="headingTwo_C3"
+                                                        data-parent="#accordionExample_C3A">
+                                                        <div class="card-body">
+                                                            9-speed Koenigsegg LST multi-clutch
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 3 -->
+                                                <div class="card" style="border-bottom-right-radius: 0;">
+                                                    <div class="card-header" id="headingThree_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThree_C3" aria-expanded="false"
+                                                                aria-controls="collapseThree_C3">
+                                                                引擎
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree_C3" class="collapse"
+                                                        aria-labelledby="headingThree_C3"
+                                                        data-parent="#accordionExample_C3A">
+                                                        <div class="card-body">
+                                                            5.1 L (5,065.48 cc; 309.1 cu in) twin-turbocharged V8
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion" id="accordionExample_C3B">
+                                                <!-- 4 -->
+                                                <div class="card" style="border-top-left-radius: 0;">
+                                                    <div class="card-header" id="headingFour_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFour_C3" aria-expanded="true"
+                                                                aria-controls="collapseFour_C3">
+                                                                排氣量
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseFour_C3" class="collapse"
+                                                        aria-labelledby="headingFour_C3"
+                                                        data-parent="#accordionExample_C3B">
+                                                        <div class="card-body">
+                                                            5.0L
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 5 -->
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFive_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFive_C3" aria-expanded="false"
+                                                                aria-controls="collapseFive_C3">
+                                                                性能
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFive_C3" class="collapse"
+                                                        aria-labelledby="headingFive_C3"
+                                                        data-parent="#accordionExample_C3B">
+                                                        <div class="card-body">
+                                                            <p>955kW @7800rpm , 1000Nm @2700~6170rpm on gasoline</p>
+                                                            <p>1195kW , 1500Nm @5100rpm on E85 Biofuel</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 6 -->
+                                                <div class="card" style="border-bottom-left-radius: 0;">
+                                                    <div class="card-header" id="headingSix_C3">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseSix_C3" aria-expanded="false"
+                                                                aria-controls="collapseSix_C3">
+                                                                產地與售價
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseSix_C3" class="collapse show"
+                                                        aria-labelledby="headingSix_C3"
+                                                        data-parent="#accordionExample_C3B">
+                                                        <div class="card-body">
+                                                            瑞典 , 售價約 78,000,000NT
+                                                            <a class="btn btn-outline-primary btn-sm" style="position: absolute; right: 2%;"
+                                                                data-toggle="modal" data-target="#logginModal">預約賞車</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Collapse -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car3 End-->
+            </div>
+        </div>
+        <!-- Card End-->
+
+        <div class="modal fade" id="logginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">需要登入才能執行此操作</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="login_email" class="col-form-label">E-Mail:</label>
+                                <input type="email" class="form-control" id="login_email" placeholder="輸入使用者信箱">
+                            </div>
+                            <div class="form-group">
+                                <label for="login_password" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="login_password" placeholder="輸入使用者密碼">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a data-dismiss="modal" id="reg"><u>沒有帳號嗎？</u></a>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="_loggin">登入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 999; left: 0; bottom: 0;">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
+                data-delay="4000">
+                <button type="button" class="ml-2 mb-1 mr-2 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="toast-header">
+                    <h3 class="mr-auto" style="color: red;">錯誤</h3>
+                </div>
+
+                <div class="toast-body" style="padding: 16px 4px;">
+                    <h4>伺服器無回應，請不要再嘗試。</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Body End-->
+
+    <!-- Footer Start -->
+    <footer class="border-top pt-2" style="background-color: rgb(200, 200, 200);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 text-md-left">
+                    <h1>預約試乘</h1>
+                    <p><i class="bi bi-geo-alt-fill mr-1"></i>106台北市大安區建國南路二段231號</p>
+                    <p><i class="bi bi-telephone-fill mr-1"></i></i>02 12345678</p>
+
+                </div>
+
+                <div class="col-md-4 text-md-center">
+                    <div style="font-size: 48px;">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center" style="background-color: rgb(180, 180, 180);">
+            <p>Copyright 2021</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
